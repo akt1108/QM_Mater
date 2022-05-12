@@ -41,14 +41,14 @@
                 document.getElementById("b"+num).addEventListener("click", markingB);
                 document.getElementById("c"+num).addEventListener("click", markingC);
                 document.getElementById("d"+num).addEventListener("click", markingD);
-                document.getElementById("a"+num).style.marginTop="3rem";
-                document.getElementById("b"+num).style.marginTop="3rem";
-                document.getElementById("c"+num).style.marginTop="3rem";
-                document.getElementById("d"+num).style.marginTop="3rem";
-                document.getElementById("a"+num).style.marginBottom="3rem";
-                document.getElementById("b"+num).style.marginBottom="3rem";
-                document.getElementById("c"+num).style.marginBottom="3rem";
-                document.getElementById("d"+num).style.marginBottom="3rem";
+                document.getElementById("a"+num).style.marginTop="1.5rem";
+                document.getElementById("b"+num).style.marginTop="1.5rem";
+                document.getElementById("c"+num).style.marginTop="1.5rem";
+                document.getElementById("d"+num).style.marginTop="1.5rem";
+                document.getElementById("a"+num).style.marginBottom="1.5rem";
+                document.getElementById("b"+num).style.marginBottom="1.5rem";
+                document.getElementById("c"+num).style.marginBottom="1.5rem";
+                document.getElementById("d"+num).style.marginBottom="1.5rem";
             }
 
             function markingA(){

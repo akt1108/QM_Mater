@@ -3,24 +3,18 @@
     <head>
         <title>QM MASTER</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script src="https://cdn.tailwindcss.com"></script>
         <style>
-            body{
-                /* -webkit-text-size-adjust : none;
-                -ms-text-size-adjust : none;
-                -moz-text-size-adjust : none;
-                -o-text-size-adjust : none; */
-                margin: 0px;
-            }
-
-            h1{
-                text-align: center;
-                border-bottom: 0.6rem black solid;
-                margin: 0px;
+            
+            @media all and (min-width: 1024px){
+                html{
+                    font-size: 1.5rem;
+                }    
             }
             
             .unit {
-                margin: 3.6rem;
+                margin: 1.8rem;
             }
 
             .answer{
@@ -30,7 +24,7 @@
 
             .question{
                 font-weight: bold;
-                margin-bottom: 1.2rem;
+                margin-bottom: 0.6rem;
             }
         </style>
         <script type="text/javascript" src="qna7.js"></script>
@@ -38,8 +32,8 @@
     </head>
 
     <body>
-        <div class="text-4xl font-sans">
-            <a href="index.html"><h1 class="py-2 text-6xl font-bold text-center border-b-8 border-indigo-600">QM MASTER</h1></a>
+        <div class="text-lg font-sans">
+            <a href="index.html"><h1 class="py-2 text-3xl font-bold text-center border-b-8 border-indigo-600">QM MASTER</h1></a>
             <script>
                 for(i=0; i<question.length; i++){
                     displayQuestion(i);
