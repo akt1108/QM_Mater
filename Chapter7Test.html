@@ -6,12 +6,10 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <style>
             body{
-                -webkit-text-size-adjust : none;  /* 크롬, 사파리, 오페라 신버전 */
-                -ms-text-size-adjust : none;  /* IE */
-                -moz-text-size-adjust : none;  /* 파이어폭스 */
-                -o-text-size-adjust : none;  /* 오페라 구버전 */
-                font-size: 2rem;
-                font-family: sans-serif;
+                /* -webkit-text-size-adjust : none;
+                -ms-text-size-adjust : none;
+                -moz-text-size-adjust : none;
+                -o-text-size-adjust : none; */
                 margin: 0px;
             }
 
@@ -20,13 +18,44 @@
                 border-bottom: 0.6rem black solid;
                 margin: 0px;
             }
+            
+            .unit {
+                margin: 3.6rem;
+            }
+
+            .answer{
+                font-weight: bold;
+                color: red;
+            }
+
+            .wrong{
+                color: blue;
+                text-decoration: line-through;
+            }
+
+            .correct{
+                font-weight: bold;
+                color: green;
+            }
+
+            .question{
+                font-weight: bold;
+                margin-bottom: 1.2rem;
+            }
         </style>
+        <script type="text/javascript" src="qna7.js"></script>
+        <script type="text/javascript" src="qna.js"></script>
     </head>
 
     <body>
         <div class="text-4xl font-sans">
-            <h1 class="py-2 text-6xl font-bold text-center border-b-8 border-indigo-600">QM MASTER</h1>
-            
+            <a href="index.html"><h1 class="py-2 text-6xl font-bold text-center border-b-8 border-indigo-600">QM MASTER</h1></a>
+            <script>
+                num=getRandomInt(0, question.length-1);
+                displayQuestion(num);
+                marking(num);
+            </script>
+            <div class="text-center"><button onclick="window.location='Chapter7test.html';" class="text-gray-600 px-4 py-2 rounded-full bg-sky-300 hover:bg-sky-500">Next Question</button></div>
         </div>
     </body>
 </html>
